@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Welcome to OthoGal!
 
-You can use the [editor on GitHub](https://github.com/NASUA/OthoGAL/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is the repository for an online tool to catalog and explore the otoliths of fish species from the Galapagos Islands. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The tool is in development and is open source. 
 
-### Markdown
+Want to contribute? Get in touch. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Authors:
 
-```markdown
-Syntax highlighted code block
+- Sara Carranco (Marine Ecologist). She has colected, classified and provide pictures and data about fish otholits from the diet of the Galapagos Sea Lion [Zalophus wollebaeki](https://es.wikipedia.org/wiki/Zalophus_wollebaeki). 
 
-# Header 1
-## Header 2
-### Header 3
+- Gabriel Muñoz (Evolutionary Ecologist). He is developing the web tool. 
 
-- Bulleted
-- List
+MIT License. 
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NASUA/OthoGAL/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
