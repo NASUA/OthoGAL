@@ -1,0 +1,46 @@
+---
+title: "Otolites"
+author: "Gabriel Muñoz"
+date: "4/10/2018"
+output: html_document
+---
+
+
+```{r}
+
+
+path1 = list.files("www/figs/2015/")
+path2 = sapply(path1, function(x) paste("www/figs/2015/", x, sep = ""))
+path3 = sapply(path2, function(x) list.files(x))
+
+basename(path2)
+names = reshape2::melt(path3)
+namesFolders = paste(path2[match(names$L1, basename(path2))], names$value, sep = "/")
+dataBase = reshape2::melt(sapply(namesFolders, function(x) list.files(x)))
+
+names(dataBase) = c("codigo", "path")
+
+dataBase$species = basename(dataBase$path)
+
+img = c()
+for (i in 1:length(dataBase$codigo)){img[i] = paste(dataBase$path[i], dataBase$codigo[i], sep = "/")}
+dataBase$img = img
+dataBase$path = NULL
+
+write.csv(x = dataBase, file = "data/fishdata.csv", row.names = F)
+
+
+library(rfishbase)
+
+
+```
+
+```{r}
+library(imager)
+
+img = imager::load.image("www/figs/2015/Otolitos_ Oct/Anchoa/Oct-23(15).jpg")
+img.g = imager::grayscale(img)
+plot(img.g)3
+threshold(img.g,0.7) %>% plot
+```
+
